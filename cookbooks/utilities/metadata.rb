@@ -63,3 +63,13 @@ attribute "dns/address_type",
   :recipes => ["utilities::register_dns_name"],
   :required => "optional",
   :default => "public"
+  
+  
+recipe "utilities::cheftutorial", "Chef Tutorial"  
+recipe "utilities::default", "Not yet implemented"
+
+attribute "utilities/MYNAME",
+  :display_name => "Please enter your name",
+  :description => "This is your name",
+  :recipes => ["utilities::cheftutorial"],
+  :required => "required"
